@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/839634aa65.js" crossorigin="anonymous"></script>
+    <title> butteredcatloaf's site </title>
+</head>
+<!--body onload="loadScreen" style="margin:0;"-->
+<body>
+    <nav>
+        <div id="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg"></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>   
+                    <li><a href="">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="https://tinyurl.com/5abbjezz">PORTFOLIO</a></li>
+                    <li><a href="https://tinyurl.com/ms7us3f6">RESUME</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+    </nav>
+    <div class="home-left">
+        <div class="left-container">
+            <h1 class="site">WHERE BAKING AND CODING COME TOGETHER</h1>
+            <div class="cta">
+                SEE MORE
+            </div>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <div class="overlay"></div>
+        <img src="images/banner.jpg" preload="none">
+    </div>
+
+    <div class="socials">
+        <ul>
+            <li class="link">FACEBOOK</li>
+            <li class="link">LINKEDIN</li>
+            <li class="link">GITHUB</li>
+        </ul>
+    </div>
+
+    <section class="main-intro">
+        <h1>Hi! I'm Elizabeth Zhang, </h1>
+    </section>
+
+    <script src="test.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>

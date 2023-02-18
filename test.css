@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+body, html {
+    background-color: #FFC9A6;
+}
+h1{
+    font-size: 1.5rem;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-bar {
+    z-index: 5;
+    width: 100%;
+    position: fixed;
+    background-color: #FFA76D;
+    padding-left: 9%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav img {
+    width: auto;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+    padding-right: 9%;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #F7F3EB;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F7F3EB;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+nav .fa-solid {
+    display: none;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.home-left {
+    position: relative;
+    left: -55%;
+    width: 55%;
+    height: 100vh;
+    background-color: #F7F3EB;
+    animation: slide-perm 2s forwards;
+}
+.image-container {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 60%;
+    height: 60%;
+    overflow: hidden;
+    z-index: 1;
+}
+.image-container img {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    visibility: hidden;
+}
+.overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #FFA76D;
+    opacity: 1;
+}
+.left-container {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    background-color: #F7F3EB;
+    bottom: 0%;
+    height: 25%;
+    padding-left: 18%;
+    padding-top: 1rem ;
+}
+.cta {
+    position: relative;
+    top: 20px;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 8rem;
+    text-align: center;
+    background-color: #FFA76D;
+    color: #F7F3EB;
+    opacity: 0;
+}
+.site {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+}
+.socials {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    height: 15%;
+    color: #F7F3EB;
+    font-weight: 700;
+}
+.socials ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+}
+.link {
+    position: relative;
+    top: 20px;
+    opacity: 0;
+}
+.socials ul li:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+.active {
+    position: relative;
+    top: 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+.main-intro {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F3EB;
+}
+@keyframes slide {
+    0% {
+        left: -100%;
+        visibility: visible;
+    }
+    25% {
+        left: -100%;
+    }
+    75% {
+        left: 0%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes slide-perm {
+    0% {
+        left: -100%;
+        visibility: visible;
+    }
+    25% {
+        left: -100%;
+    }
+    75% {
+        left: 0%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+@media(max-width: 1200px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    .text-box h1 {
+        font-size: 40px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #dd6e28;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -220px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;  
+    }
+    nav .fa-solid {
+        display: block;
+        color: #F7F3EB;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    
+
+    /*bakery*/
+
+    .row {
+        flex-direction: column;
+    }
+
+}

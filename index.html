@@ -1,14 +1,8 @@
-<!--
-    To commit to github
-    E:\butteredcatloaf.github.io
-    git push -u origin main
--->
-
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="with=device-width, initial=scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
@@ -17,167 +11,50 @@
 </head>
 <!--body onload="loadScreen" style="margin:0;"-->
 <body>
-    <!---- loading 
-    <div class="loader">
-        <div class="loader-text">
-            <h1 class="load-text">Hi !</h1>
-            <h1 class="load-text">Welcome :)</h1>
+    <nav>
+        <div id="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg"></a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>   
+                    <li><a href="">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="https://tinyurl.com/5abbjezz">PORTFOLIO</a></li>
+                    <li><a href="https://tinyurl.com/2z4zheys">RESUME</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </div>
+    </nav>
+    <div class="home-left">
+        <div class="left-container">
+            <h1 class="site">WHERE BAKING AND CODING COME TOGETHER</h1>
+            <!-- <div class="cta">
+                SEE MORE
+            </div> -->
         </div>
     </div>
-    ---->
+    
+    <div class="image-container">
+        <div class="overlay"></div>
+        <img src="images/banner.jpg" preload="none">
+    </div>
 
-    <!---- header ---->
+    <div class="socials">
+        <ul>
+            <li class="https://www.linkedin.com/in/elizabeth-jp-zhang/">LINKEDIN</li>
+            <li class="https://github.com/butteredcatloaf">GITHUB</li>
+            <li class="https://www.instagram.com/liz.jp.zhang/">INSTAGRAM</li>
+        </ul>
+    </div>
 
-
-    <!---- header ---->
-    <section class="header">
-        <nav>
-            <div class="nav-bar">
-                <a href="index.html"><img src="images/logo.svg"></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                    <ul>   
-                        <li><a href="">HOME</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="https://tinyurl.com/5abbjezz">PORTFOLIO</a></li>
-                        <li><a href="https://tinyurl.com/ms7us3f6">RESUME</a></li>
-                    </ul>
-                </div>
-                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
-            </div>
-        </nav>
-        <div class="text-box">
-            <h1>butteredcatloaf's bakery</h1>
-            <p>Hi! If you're reading this, the site isn't finished yet- it's one of my previous drafts.
-                <br>It will be done by January 1st, 2023. 
-            </p>
-            <a href="" class="button">Check out our wares</a>
-        </div>
-    </section>
-
-    <!---- content ---->
-    <section class="bakery">
-        <h1>Learn about our bread origins</h1>
-        <p>bread that we provide to you on a daily basis
-            <br> i love bread sm its so good bakery bread is amazing i want a baguette
-        </p>
-        <div class="row">
-            <div class="bakery-col">
-                <h3>Small Buns</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est lectus. Aenean mollis cursus tortor, eget placerat elit malesuada eget. Pellentesque sed fermentum risus, finibus varius odio. 
-                </p>
-            </div>
-            <div class="bakery-col">
-                <h3>Baguettes</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est lectus. Aenean mollis cursus tortor, eget placerat elit malesuada eget. Pellentesque sed fermentum risus, finibus varius odio. 
-                </p>
-            </div>
-            <div class="bakery-col">
-                <h3>Croissants</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est lectus. Aenean mollis cursus tortor, eget placerat elit malesuada eget. Pellentesque sed fermentum risus, finibus varius odio. 
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!---- content2 ---->
-    <section class="cafe">
-        <h1>Our cafe <3</h1>
-        <p>look at photos of our cafe! we have a cafe section dedicated to morning coffee lovers.</p>
-        <div class="row">
-            <div class="cafe-col">
-                <img src="images/cafe lightbulbs.jpg">
-                <div class="layer">
-                    <h3>Our Ambience</h3>
-                </div>
-            </div>
-            <div class="cafe-col">
-                <img src="images/cafe atmosphere.jpg">
-                <div class="layer">
-                    <h3>Our Atmosphere</h3>
-                </div>
-            </div>
-            <div class="cafe-col">
-                <img src="images/cafe coffee pucks.jpg">
-                <div class="layer">
-                    <h3>Our Coffee</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!---- content 3 ---->
-    <section class="patisserie">
-        <h1>Our Patisserie</h1>
-        <p>for our beloved confectionery lovers, madeleine enjoyers, and high society tea folks.</p>
-        <div class="row">
-            <div class="patisserie-col">
-                <img src="images/patisserie croissant.jpg">
-                <h3> Fresh out of the oven</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est lectus. Aenean mollis cursus tortor, eget placerat elit malesuada eget. Pellentesque sed fermentum risus, finibus varius odio.
-                </p> 
-            </div>
-            <div class="patisserie-col">
-                <img src="images/patisserie store front.jpg">
-                <h3> Always available</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est lectus. Aenean mollis cursus tortor, eget placerat elit malesuada eget. Pellentesque sed fermentum risus, finibus varius odio.
-                </p> 
-            </div>
-            <div class="patisserie-col">
-                <img src="images/patisserie mini cakes.jpg">
-                <h3> Mini confectioneries, ready to deliver</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est lectus. Aenean mollis cursus tortor, eget placerat elit malesuada eget. Pellentesque sed fermentum risus, finibus varius odio.
-                </p> 
-            </div>
-        </div>
-    </section>
-
-    <!---- content4 
-    <section class="history">
-        <h1>Our History</h1>
-        <p>a small business that opened up during COVID, we are a group of bakers who came together in 2020.</p>
-        <div class="row"> 
-            <div class="history-col"> 
-                <img src="images/history kneading.jpg">
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est lectus. Aenean mollis cursus tortor, eget placerat elit malesuada eget. Pellentesque sed fermentum risus, finibus varius odio.
-                    </p>
-                    <h3> Kneading for over 20 years</h3>
-                </div>
-            </div>
-            <div class="history-col"> 
-                <img src="images/history food.jpg">
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac est lectus. Aenean mollis cursus tortor, eget placerat elit malesuada eget. Pellentesque sed fermentum risus, finibus varius odio.
-                    </p>
-                    <h3>Fresh, affordable, and delicious</h3>
-                </div>
-            </div>
-        </div>
-    </section>---->
-
-    <!---- contact ---->
-    <section class="contact">
-        <h1> Drop by our cafe, anytime!</h1>
-        <a href="https://www.google.com/maps/place/Duo+P%C3%A2tisserie/@43.8438095,-79.3797355,17z/data=!3m1!4b1!4m5!3m4!1s0x89d4d4b488954587:0x8484bdbef3da1aee!8m2!3d43.8438095!4d-79.3775468" class="button">View our locations</a>
-    </section>
-
-    <!---- footer ---->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p> we love baking! we absolutely love baking and the process, enjoying warm food with friends and family, and 
-            <br>ending it off with sweets that will make you feel like youre on cloud nine. 
-        </p>
-        <div class="icons"> 
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-        </div>
-        <p> Designed with <i class="fa-regular fa-heart"></i> by Elizabeth Zhang</p>
-    </section>
+    <!-- <section class="main-intro">
+        <h1>Hi! I'm Elizabeth Zhang, </h1>
+    </section> -->
 
     <script src="index.js"></script>
-    
+    <script src="navbar.js"></script>
 </body>
 </html>
